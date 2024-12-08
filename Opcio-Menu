@@ -19,7 +19,7 @@ echo "En desenvolupament";;
 2)clear 
 echo "En desenvolupament";;
 3)clear
-echo "lol";;
+echo "En desenvolupament";;
 4)clear
 echo "En desenvolupament";;
 *) clear
