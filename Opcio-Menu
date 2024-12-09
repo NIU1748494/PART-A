@@ -1,3 +1,7 @@
+
+while :
+do
+
 echo "---------------------------------------------------------"
 echo "Catàleg de guanyadors i guanyadores d’Oscars"
 echo "---------------------------------------------------------"
@@ -6,16 +10,28 @@ echo "2 Cerca al catàleg."
 echo "3 Com ets d’Expert?"
 echo "4 Gestió del catàleg."
 echo "0 Sortir."
-read num
-while [ $num -ne 0 ]
-do
 
+read num
 case $num in
-0)
+0)echo "Amor pel Setè Art"
 break;;
-1)echo "Amor pel Setè Art"
+1)
 clear
-echo "En desenvolupament";;
+echo "--------------------------------------------------"
+			echo "1 - Llistats del catàleg."
+			echo "--------------------------------------------------"
+			echo "1 Llistat d’actors i actrius per data del premi."
+			echo "2 Llistat alfabètic de pel·lícules."
+			echo "3 Llistat per edat d’actors i actrius."
+			echo "0 Tornar al menú anterior."
+read num
+case $num in
+1)
+./tasca1-1.sh $1 $2
+;;
+*) echo "dos"
+;;
+esac
 2)clear 
 echo "En desenvolupament";;
 3)clear
@@ -28,13 +44,4 @@ sleep 2
 clear;;
 
 esac
-echo "---------------------------------------------------------"
-echo "Catàleg de guanyadors i guanyadores d’Oscars"
-echo "---------------------------------------------------------"
-echo "1 Llistats del catàleg."
-echo "2 Cerca al catàleg."
-echo "3 Com ets d’Expert?"
-echo "4 Gestió del catàleg."
-echo "0 Sortir."
-read num
-done
+
