@@ -1,8 +1,8 @@
 #!/bin/bash
 actor=$1
 actriz=$2
-lineasactor=$(wc -l < "$actor")
-lineasactriz=$(wc -l <"$actriz")
+lineasactor=$(wc -l < "$actor")-1
+lineasactriz=$(wc -l <"$actriz")-1
 echo "**********************************************************************************"
 echo "******************* LLISTAT D’ACTORS I ACTRIUS PER DATA DEL PREMI. **************"
 echo "***** LLISTAT OSCARS A MILLOR ACTOR:"
